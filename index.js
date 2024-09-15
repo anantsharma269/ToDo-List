@@ -16,6 +16,7 @@ function add(){
 function deleteEle(ele){
     let deleteBtn = document.createElement('button');
     deleteBtn.innerText = "Delete";
+    deleteBtn.setAttribute("class", "btn btn-danger")
     ele.appendChild(deleteBtn);
     deleteBtn.onclick = function(){
         ele.remove();
